@@ -36,6 +36,18 @@ const Navbar = () => {
                 })}
             </ul>
         </div>
+        <div className='nav-icons'>
+            <ul>
+            {menuItems.map((item) => {
+                return (
+                    <li><a href='#'>
+                        {item.icon}
+                        <small>{item.text}</small>
+                    </a></li>
+                )
+            })}
+            </ul>
+        </div>
         <div className='nav-btn'>
             <button className='primary-btn'>Sign Up</button>
         </div>
