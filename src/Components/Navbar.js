@@ -49,7 +49,8 @@ const Navbar = () => {
             </ul>
         </div>
         <div className='nav-btn'>
-            <button className='primary-btn'>Sign Up</button>
+            <button className='primary-outline-btn'>Login</button>
+            <button className='primary-btn'>Sign Up</button>   
         </div>
         
     </nav>

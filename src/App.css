@@ -28,6 +28,10 @@ nav {
   justify-content: space-between;
 }
 
+.logo {
+  width: 33.3%;
+}
+
 .logo-text {
   color: #45a8d0;
 }
@@ -40,7 +44,8 @@ nav {
 nav ul {
   list-style-type: none;
   display: flex;
-  gap: 1.5rem;
+  justify-content: space-between;
+  width: 33.3%;
 }
 
 nav ul a,
@@ -48,13 +53,19 @@ nav ul a:visited,
 nav ul a:focus {
   color: #00072D;
   text-decoration: none;
+  margin-inline: 1rem;
 }
 
 nav ul a:hover {
   color: #FA824C;
 }
 
-.primary-btn {
+.nav-btn {
+  width: 33.3%;
+  text-align: right;
+}
+
+.primary-btn, .primary-outline-btn {
   border: none;
   background-color: #FA824C;
   color: #F7F0F5;
@@ -62,6 +73,20 @@ nav ul a:hover {
   padding: 0.5rem 1.5rem;
   border-radius: 100px;
   cursor: pointer;
+  width: 120px;
+  transition: all 0.2s ease-in-out;
+}
+
+.primary-outline-btn {
+  background-color: transparent;
+  border: 2px solid #FA824C;
+  color: #00072D;
+  margin-right: 10px;
+}
+
+.primary-outline-btn:hover {
+  background-color: #FA824C;
+  color: #F7F0F5;
 }
 
 .primary-btn:hover {
@@ -100,4 +125,9 @@ nav ul a:hover {
     align-items: center;
     gap: 1rem;
   }
+
+.logo {
+  width: 100%;
+  text-align: center;
+}
 }
