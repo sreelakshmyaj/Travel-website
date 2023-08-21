@@ -9,7 +9,7 @@
   font-family: 'Manrope', sans-serif
 }
 
-h1, h2 {
+h1, h2, h3, h4 {
   font-family: 'Lato', sans-serif;
 }
 
@@ -111,29 +111,6 @@ nav ul a:hover {
   font-size: 0.8rem;
 }
 
-@media screen and (max-width: 768px) {
-  .menu,
-  .nav-btn {
-    display: none;
-  }
-  .nav-icons ul{
-    display: flex;
-    justify-content: space-around;
-  }
-  nav {
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1rem;
-  }
-
-.logo {
-  width: 100%;
-  text-align: center;
-  }
-}
-
 /* Hero.js */
 
 .hero-container video{
@@ -183,4 +160,86 @@ nav ul a:hover {
 .trial {
   background-color: red;
   height: 100vh;
+}
+
+/* Features.js */
+.features-container {
+  padding: 1rem;
+}
+
+.features-container h4 {
+  text-transform: uppercase;
+  color: #45a8d0;
+  letter-spacing: 2px;
+}
+
+.feature-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.feature-card {
+  width: 23%;
+  height: 300px;
+  background-color: #eddee8;
+  padding: 2rem;
+  border-radius: 0.5rem;
+}
+
+.feature-card:nth-child(1) {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+}
+
+.feature-card:nth-child(1) h2 {
+  font-size: 2rem;
+  color: #00072D;
+}
+
+.feature-card:nth-child(3) {
+  margin-top: 3rem;
+}
+
+.feature-card h2 {
+  color: #FA824C;
+  letter-spacing: 1px;
+  margin: 1.5rem 0;
+}
+
+.feature-card p {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 768px) {
+  .menu,
+  .nav-btn {
+    display: none;
+  }
+  .nav-icons ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  nav {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    }
+  .feature-card {
+    width: 40%;
+  } 
+  .feature-card:nth-child(3) {
+    margin: 0;
+  }
+
 }
