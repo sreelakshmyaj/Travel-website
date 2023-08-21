@@ -68,7 +68,6 @@ nav ul a:hover {
 }
 
 .primary-btn, .primary-outline-btn {
-  border: none;
   color: #F7F0F5;
   font: inherit;
   padding: 0.5rem 1.5rem;
@@ -88,6 +87,7 @@ nav ul a:hover {
   background-color: #FA824C;
   background-image: linear-gradient(#FA824C, #c4673d);
   color: #F7F0F5;
+  border: none;
 }
 
 .primary-btn:hover
