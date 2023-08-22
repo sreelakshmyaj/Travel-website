@@ -239,7 +239,7 @@ nav ul a:hover {
 .tour-card {
   flex-shrink: 0;
   width: 300px;
-  height: 400px;
+  height: 450px;
   background-color: #eddee8;
   padding: 2rem;
   margin: 2rem 1.2rem;
@@ -254,6 +254,7 @@ nav ul a:hover {
   height: 157px;
   overflow: hidden;
   margin-bottom: 1rem;
+  border-radius: 0.5rem;
 }
 
 .tour-img img {
@@ -265,6 +266,21 @@ nav ul a:hover {
 
 .tour-img img:hover {
   transform: scale(1.08);
+}
+
+.tour-card .head-txt {
+  display: flex;
+  justify-content: space-between;
+}
+
+.rating {
+  background-color: #F7F0F5;
+  padding: 5px;
+  border-radius: 0.25rem;
+}
+
+.rating-icon {
+  color: #dcce04;
 }
 
 .tour-card h4 {
