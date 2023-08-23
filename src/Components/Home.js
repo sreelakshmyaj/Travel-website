@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Features from './Features';
 import Destinations from './Destinations';
+import Experience from './Experience';
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <Hero />
         <Features />
         <Destinations />
+        <Experience />
     </div>
   )
 }
