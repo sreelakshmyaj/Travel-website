@@ -9,13 +9,21 @@ const Experience = () => {
     useEffect(() => {
         const handleScroll = () => {
             const scrollPosition = window.scrollY;
-        }
+            const sectionPosition = document.querySelector(".experience-container").offsetTop - window.innerHeight + 500;
 
-        window.addEventListener('scroll', handleScroll);
+            if (scrollPosition >= sectionPosition) {
+                setValue1(value1 < 20 ? value1+ 1 : value1);
+                setValue2(value2 < 80 ? value2 + 1: value2);
+                setValue3(value3 < 50 ? value3 + 1: value3);
+            }
+        };
+
+        const interval = setInterval(handleScroll, 100);
+
         return () => {
-            window.removeEventListener('scroll', handleScroll);
+            clearInterval(interval);
         }
-    }, [])
+    })
 
   return (
     <div className='experience-container'>
@@ -29,8 +37,8 @@ const Experience = () => {
 
             <div className='counter'>
                 <div><span className='c1'>{value1}</span>Years Experience</div>
-                <div><span className='c2'>{value2}</span>Destination Collaboration</div>
-                <div><span className='c3'>{value3}</span>Happy Customers</div>
+                <div><span className='c2'>{value2}+</span>Destination Collaboration</div>
+                <div><span className='c3'>{value3}K</span>Happy Customers</div>
             </div>
         </div>
     </div>
