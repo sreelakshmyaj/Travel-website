@@ -1,5 +1,4 @@
 import React from 'react'
-import profile1 from '../Assets/profile1.webp';
 import Carousel from 'react-elastic-carousel';
 import reviewdata from '../review';
 
@@ -27,7 +26,7 @@ const ReviewCard = (props) => {
   return (
     <div className='review-card'>
       <div className="profile">
-        <img src={props.image} width={100} height={100}/>
+        <img src={props.image} width={100} height={100} alt='profile'/>
       </div>
       <div className='text'>
         <p>

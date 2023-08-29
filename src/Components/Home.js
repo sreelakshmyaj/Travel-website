@@ -6,6 +6,7 @@ import Features from './Features';
 import Destinations from './Destinations';
 import Experience from './Experience';
 import Review from './Review';
+import Footer from './Footer';
 
 const Home = () => {
   return (
@@ -16,6 +17,7 @@ const Home = () => {
         <Destinations />
         <Experience />
         <Review />
+        <Footer />
     </div>
   )
 }
