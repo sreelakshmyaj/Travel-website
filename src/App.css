@@ -10,8 +10,12 @@
   font-family: 'Manrope', sans-serif
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5 {
   font-family: 'Lato', sans-serif;
+}
+
+h5 {
+  text-transform: uppercase;
 }
 
 h4 {
@@ -349,6 +353,71 @@ nav ul a:hover {
   color: #c4673d;
 }
 
+/* Review.js */
+
+.review-container {
+  padding: 2rem;
+}
+
+.review-card {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  min-height: 200px;
+}
+
+.profile {
+  position: relative;
+  top: 0px;
+}
+
+.profile img {
+  border-radius: 50%;
+}
+
+.line {
+  width: 100px;
+  height: 5px;
+  background-color: #45a8d0;
+  margin: 1rem 0;
+}
+
+div.rec.rec-carousel {
+  background-color: #eddee8;
+  margin-top: 2rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  min-height: 250px;
+  width: 50%;
+}
+
+button.rec.rec-arrow {
+  background-color: #eddee8 !important;
+  box-shadow: none;
+}
+
+button.rec.rec-arrow:hover {
+  background-color: #64c6ed !important;
+  box-shadow: none;
+}
+
+button.rec-arrow:disabled {
+  visibility: hidden;
+}
+
+button.rec.rec-dot {
+  box-shadow: none;
+  border: 2px solid #45a8d0;
+}
+
+button.rec.rec-dot.rec-dot_active {
+  background-color: #45a8d0;
+}
+
+button.rec.rec-dot:hover {
+  background-color: #45a8d0;
+}
+
 @media screen and (max-width: 768px) {
   .menu,
   .nav-btn {
@@ -385,9 +454,12 @@ nav ul a:hover {
   }
 }
 
-@media screen and (min-width: 1080px) {
-  /* .tour-card {
-    width: 25%;
-    height: 500px;
-  } */
+@media screen and (max-width: 550px) {
+  .counter {
+    flex-direction: column;
+  }
+  .review-card {
+    flex-direction: column;
+    align-items: center;
+  }
 }

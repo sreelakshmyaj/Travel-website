@@ -1,8 +1,42 @@
 import React from 'react'
+import profile1 from '../Assets/profile1.webp';
+import Carousel from 'react-elastic-carousel';
+import reviewdata from '../review';
 
 const Review = () => {
   return (
-    <div>Review</div>
+    <div className='review-container'>
+      <h4>Reviews</h4>
+      <h1>We Care About Our Customers Experience Too</h1>
+      <div className='reviews'>
+        <Carousel>
+          {reviewdata.map((item) => (
+            <ReviewCard
+              image = {item.image}
+              review = {item.review}
+              name = {item.name}
+            />
+          ))}
+        </Carousel>
+      </div>
+    </div>
+  )
+}
+
+const ReviewCard = (props) => {
+  return (
+    <div className='review-card'>
+      <div className="profile">
+        <img src={props.image} width={100} height={100}/>
+      </div>
+      <div className='text'>
+        <p>
+          {props.review}
+        </p>
+        <div className="line"></div>
+        <h5>{props.name}</h5>
+      </div>
+    </div>
   )
 }
 
