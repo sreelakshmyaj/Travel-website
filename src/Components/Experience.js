@@ -18,7 +18,7 @@ const Experience = () => {
             }
         };
 
-        const interval = setInterval(handleScroll, 100);
+        const interval = setInterval(handleScroll, 50);
 
         return () => {
             clearInterval(interval);
