@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.73e3b056.css",
+    "main.js": "/static/js/main.fcbef809.js",
+    "static/media/video1.mp4": "/static/media/video1.7f7f0680b3086603f215.mp4",
+    "static/media/tourist.jpg": "/static/media/tourist.2b531dd5a5150a4796a3.jpg",
+    "static/media/tokyo.jpg": "/static/media/tokyo.5239674cb00c96b5a5e8.jpg",
+    "static/media/paris.jpg": "/static/media/paris.3fa891de6994cfbfa91a.jpg",
+    "static/media/bali.jpg": "/static/media/bali.6c15fd9ff241a56c2ba9.jpg",
+    "static/media/profile3.jpg": "/static/media/profile3.65ba57471dc60f564881.jpg",
+    "static/media/newyork.jpg": "/static/media/newyork.2f703402b98ce2861b3a.jpg",
+    "static/media/capetown.jpg": "/static/media/capetown.de2c9e643ece0f90f9ab.jpg",
+    "static/media/profile4.jpg": "/static/media/profile4.6b65340705100729f961.jpg",
+    "static/media/sydney.jpg": "/static/media/sydney.66355639e5dbe73eb87a.jpg",
+    "static/media/profile1.webp": "/static/media/profile1.1e7aeef0082a7fa22893.webp",
+    "static/media/profile2.webp": "/static/media/profile2.bf48e1b210501ca0e15c.webp",
+    "static/media/profile5.webp": "/static/media/profile5.f88a47fd0f63c0d7a931.webp",
+    "index.html": "/index.html",
+    "main.73e3b056.css.map": "/static/css/main.73e3b056.css.map",
+    "main.fcbef809.js.map": "/static/js/main.fcbef809.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.73e3b056.css",
+    "static/js/main.fcbef809.js"
+  ]
+}
